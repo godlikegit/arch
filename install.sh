@@ -19,6 +19,6 @@ arch-chroot /mnt /bin/bash /init.sh
 
 rm /mnt/init.sh
 
-umount /mnt
+umount -f /mnt
 
-$reboot
+#reboot

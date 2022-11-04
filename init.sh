@@ -9,14 +9,18 @@ locale-gen
 
 
 echo arch > /etc/hostname
+
 echo "
-127.0.0.1	localhost
-::1		localhost
-127.0.0.1	arch.localdomain arch" >> /etc/hosts
+127.0.0.1	localhost.localdomain	localhost
+::1			localhost.localdomain	localhost
+127.0.0.1	arch.localdomain 		arch
+" >> /etc/hosts
 
 
 grub-install --recheck /dev/sda
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
-echo -e "qweasd" | passwd
+pacman -S vim
+
+echo -e "qweasd\nqweasd" | passwd
