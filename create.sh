@@ -218,6 +218,3 @@ mkdir /mnt/home
 mkdir /mnt/root
 mount /dev/sda3 /mnt/home
 mount /dev/sda2 /mnt/root
-
-
-lsblk /dev/sda

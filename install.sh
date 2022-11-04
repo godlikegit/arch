@@ -1,8 +1,9 @@
 #!/bin/bash
 
 curl https://raw.githubusercontent.com/godlikegit/doefiles/master/create.sh
-curl https://raw.githubusercontent.com/godlikegit/doefiles/master/install.sh
 curl https://raw.githubusercontent.com/godlikegit/doefiles/master/init.sh
+
+. create.sh
 
 reflector -phttps -ccn > /etc/pacman.d/mirriorlist
 
@@ -20,4 +21,4 @@ rm /mnt/init.sh
 
 umount /mnt
 
-reboot
+$reboot
