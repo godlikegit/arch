@@ -1,7 +1,7 @@
 #!/bin/bash
 
-curl https://raw.githubusercontent.com/godlikegit/doefiles/master/create.sh
-curl https://raw.githubusercontent.com/godlikegit/doefiles/master/init.sh
+curl https://raw.githubusercontent.com/godlikegit/arch/master/create.sh
+curl https://raw.githubusercontent.com/godlikegit/arch/master/init.sh
 
 . create.sh
 
